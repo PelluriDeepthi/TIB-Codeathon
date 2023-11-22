@@ -7,7 +7,9 @@ from pymongo import MongoClient
 app = Flask(__name__)
 api = Api(app)
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/testdb'
+#app.config['MONGO_URI'] = 'mongodb+srv://pellurideepthi:deepthi@cluster0.mongodb.net/admin'
 app.config['JWT_SECRET_KEY'] = 'super-secret-key'
+#app.config['JWT_SECRET_KEY'] = '73df4ccff955f301672f26c91ece1985bb05bfb9ac9b76866a9d05897d889d54'
 mongo = PyMongo(app)
 jwt = JWTManager(app)
 
