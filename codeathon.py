@@ -1,3 +1,21 @@
+'''
+Create Role Based Access Control Enabled BE with following functions
+
+Create 2 Object Models with distinct API Routes
+1.    1st Object can be-Organisation, College, Community Etc. Etc.
+      1. Create 2 Objects of this type
+2.    2nd Object can be-Employee, Books, Events Etc. Etc.
+      1. Create Relationship of this Objects to above created Object 1
+Store & Manage these Object Model on MongoDB Instance
+Secure this REST API using JWT authentication
+Perform Search Functionality among the data
+Perform CRUD(POST, GET, PUT, PATCH, and DELETE) Operation on this API using Postman
+Assign RBAC with following Rights
+1.    Role 1 Should have Create & Read Permissions
+2.    Role 2 Should have Create, Read & Update Permissions
+3.    Role 2 Should have Create, Read, Update & Deleted Permissions
+Include 5 TestCases
+'''
 from flask import Flask, request
 from flask_restful import Api, Resource
 from flask_pymongo import PyMongo
